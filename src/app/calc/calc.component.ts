@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {Observable} from "rxjs";
 
-const ServerURL = 'http://141.11.246.83:7070'
-// const ServerURL = 'http://localhost:7070'
+// const ServerURL = 'http://141.11.246.83:7070'
+const ServerURL = 'http://localhost:7070'
 
 interface CalcOperation {
   a: string;
@@ -37,7 +37,7 @@ export class CalcComponent implements OnInit {
       b: this.b,
       op: this.op
     }).subscribe(data=>{
-      self.result = parseInt(data.result)
+      self.result = parseFloat(data.result)
     })
   }
 }
