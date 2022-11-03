@@ -1,0 +1,39 @@
+.content-wrapper{
+    background-image: url('/assets/bg2.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.calc-card{
+    width: 500px;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    padding: 10px 20px 30px 20px;
+    margin: 100px auto;
+    .heading{
+        padding: 10px;
+        text-align: center;
+    }
+}
+.calc-form {
+    select.form-select{
+        width: 100%;
+    }
+    input {
+        min-width: 0;
+        width: 100%;
+    }
+    .col-3{
+        display: flex;
+        align-items: stretch;
+        justify-items: stretch;
+        text-align: center;
+    }
+    .col-1{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}
